@@ -1,0 +1,35 @@
+
+<div fxLayout="column" class="chat-list" fxLayoutAlign="start start">
+    <div class="logo-name" fxLayout fxLayoutAlign="center center">
+        <div fxFlex="90">
+            <p>Chatext</p> 
+        </div>
+    <div fxFlex="10">
+        <mat-icon>add</mat-icon>
+    </div>
+    </div>
+      
+    <div class="chat-card" *ngFor="let chat of chats">
+        <div  fxLayout fxLayoutAlign="start center"
+        fxLayoutGap="10px">
+             <div>
+                  <img src="../../../../assets/Images/{{chat.image}}" alt="" srcset="">
+             </div>
+             <div class="card-main" fxLayout="column" fxLayoutAlign="start space-between">
+                 <div class="card-title">
+                    <p>{{chat.name}}</p>
+                 </div>
+                 <div class="card-content" fxLayout fxLayoutAlign="start space-between">
+                    <div fxFlex="80">
+                        <p>{{chat.message}}</p>
+                      </div>
+                      <div fxFlex="20" class="last_seen">
+                        <p> {{chat.last_seen}}</p>
+                       
+                      </div>
+                 </div>
+             </div>
+        </div>
+    </div>
+</div>
+

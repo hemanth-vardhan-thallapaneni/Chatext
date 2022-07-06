@@ -1,0 +1,60 @@
+.chat-screen{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    // background-color: black;
+    border-radius: 10px;
+    .chat-heading{
+        margin: 20px;
+        img{
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+        }
+        .profile-name{
+            margin-top: -7px;
+            font-size: 1.2rem;
+            color: #FAF3E3;
+            font-family: poppins;
+        }
+        .menu{
+            margin-left: 80%;
+            margin-top: 10px;
+            filter: invert(100%);
+            img{
+                height: 20px;
+                width: 20px;
+            }
+           
+        }
+         
+    }
+    .chat-window{
+        .chat-space{
+            height: 600px;
+        }
+        .chat-input{
+            width: 100%;
+            font-size: 1rem;
+            color: white;
+            input{
+               color: white;
+               width: 90%;
+               font-size: 2.5rem;
+               border: none;
+               border-radius: 10px;
+               box-shadow: 10px -10px 15px 11px rgba(0,0,0,0.35);
+               background: transparent;
+              
+            }
+        }
+    }
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    font-family: poppins;
+    font-size: 1rem;
+    padding: 0px 10px ;
+    font-weight: 400;
+    
+}

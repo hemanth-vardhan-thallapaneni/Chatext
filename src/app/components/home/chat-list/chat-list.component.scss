@@ -1,0 +1,48 @@
+.logo-name{
+    font-family: 'Satisfy', cursive;
+    color: #FAF3E3;
+    font-size: 2.4rem;
+    width: 100%;
+    margin:-25px 0px -30px 10px;
+}
+.chat-list{
+    font-family: poppins;
+ 
+    width: 100%;
+    box-shadow: 10px -10px 15px 11px rgba(0,0,0,0.35);
+    width: 400px;
+    height: 100vh;
+    background: transparent;
+    color: #FAF3E3;
+    .chat-card{
+    width: 95%;
+    height: 80px;
+     padding: 0px 10px;
+       img{
+        margin-top: 15px;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+       }
+       .card-main{
+        width: 100%;
+        .card-title{
+            font-weight: bold;
+            margin-bottom: -25px;
+        }
+        .card-content{
+            font-weight: 200;
+            font-size: 0.8rem;
+            .last_seen{
+                color: gray;
+                font-weight: bold;
+                font-size: 0.8rem;
+            }
+           }
+       }
+      
+    }
+    .chat-card:nth-child(odd){
+        background-color: #151d26;
+    }
+}
